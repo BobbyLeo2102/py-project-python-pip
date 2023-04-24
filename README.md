@@ -2,7 +2,7 @@
 
 to run python game, follow these simple steps on the terminal:
 
-''' sh
+``` sh
 cd game
 python3 main.py
-'''
+```
