@@ -4,9 +4,9 @@ import charts
 
 def run():
   data = read_csv.read_csv('data.csv') #info csv en format dict
-  data = list(filter(lambda item : item['Continent'] == 'South America',data))
+  data = list(filter(lambda item : item['2022 Population'],data))
 
-  countries = list(map(lambda x: x['Country'], data))
+  countries = list(map(lambda x: x['Country/Territory'], data))
   percentages = list(map(lambda x: x['World Population Percentage'], data))
   charts.generate_pie_chart(countries, percentages)
   
